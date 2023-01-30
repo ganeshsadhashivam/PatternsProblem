@@ -124,7 +124,11 @@ int main() {
 	
 	/*
 	* 8.pattern
-	* 
+	*********
+	 *******
+	  *****
+	   ***
+		*
 	
 	*/
 
@@ -141,5 +145,79 @@ int main() {
 		cout << endl;
 	}
 		
+	/*
+	 9.
+		    *
+		   ***
+		  *****
+		 *******
+		*********
+		*********
+		 *******
+		  *****
+		   ***
+			*
+	
+	*/
+	cout << endl;
+	//int i, j, k;
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5 - i - 1; j++) {
+			cout << " ";
+		}
+		for (int k = 0; k < (2 * i + 1); k++) {
 
+			cout << "*";
+		}
+		cout << endl;
+	}
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < i; j++) {
+			cout << " ";
+		}
+		for (int k = 0; k < 2 * 5 - (2 * i + 1); k++) {
+
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+
+	/*
+	10.
+	*
+	**
+	***
+	****
+	*****
+	****
+	***
+	**
+	*
+	 
+	*/
+	for (int i = 0; i <= 5; i++) {
+		for (int j = 0; j < i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 4 - i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+	/*
+	11.
+
+	
+	*/
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < i; j++) {
+			cout << i;
+		}
+		cout << endl;
+	}
 }
