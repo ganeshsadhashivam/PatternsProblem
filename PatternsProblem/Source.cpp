@@ -208,16 +208,79 @@ int main() {
 		}
 		cout << endl;
 	}
+	cout << endl;
+	/*
+	14.
+	A
+	AB
+	ABC
+	ABCD
+	ABCDE
+
+	*/
+	for (int i = 65; i <= 69; i++) {
+		for (int j = 65; j <= i; j++) {
+			cout << char(j);
+		}
+		cout << endl;
+	}
+	cout << endl;
+	/*
+	15.
+		ABCDE
+		ABCD
+		ABC
+		AB
+		A
+
+	*/
+	for (int i = 69; i >= 65; i--) {
+		for (int j = 65; j <= i; j++) {
+			cout << char(j);
+		}
+		cout << endl;
+	}
+
+	cout << endl;
+	/*
+	16.
+	A
+	BB
+	CCC
+	DDDD
+	EEEEE
+
+
+	*/
+	for (int i = 65; i <= 69; i++) {
+		for (int j = 65; j <= i; j++) {
+			cout << char(i);
+		}
+		cout << endl;
+	}
+	cout << endl;
+
 
 	/*
-	11.
+	* 7.pattern
+		*
+	   ***
+	  *****
+	 *******
+	*********
 
-	
 	*/
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < i; j++) {
-			cout << i;
+	cout << endl;
+	int ii, jj, kk;
+	for (ii = 65; ii <=69; ii++) {
+		for (jj = 0; jj < 70 - ii - 1; jj++) {
+			cout <<" ";
 		}
+		for (kk = 65; kk <=ii ; kk++) {
+
+			cout << char(kk);
+		}
+		//(kk - ii + 1)
 		cout << endl;
 	}
 }
