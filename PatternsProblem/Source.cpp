@@ -275,10 +275,10 @@ int main() {
 	for (ii = 65; ii <=69; ii++) {
 		for (jj = 0; jj < 70 - ii - 1; jj++) {
 			cout <<" ";
-		for (kk = 65; kk <jj ; kk++) {
+		}
+		for (kk = 65; kk <ii ; kk++) {
 
 			cout << char(kk);
-		}
 		}
 		//(kk - ii + 1)
 		cout << endl;
